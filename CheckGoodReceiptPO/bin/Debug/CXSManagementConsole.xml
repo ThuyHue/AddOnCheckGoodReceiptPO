@@ -1,0 +1,19 @@
+<Configuration>
+  <NHibernateConfiguration>
+    <connectionprovider>NHibernate.Connection.DriverConnectionProvider</connectionprovider>
+    <dialect>NHibernate.Dialect.MsSql2005Dialect</dialect>
+    <driverclass>NHibernate.Driver.SqlClientDriver</driverclass>
+    <showsql>true</showsql>
+    <connectionstring>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8LBCH/OMiU2huXn74BIfIAQAAAACAAAAAAAQZgAAAAEAACAAAAB7HHrzi+1id7F67+WPB5kuCwtzVFlN6NWW1wR06egzxwAAAAAOgAAAAAIAACAAAAAZH2niAsZw+o4vcCkTvVoX+1Bh5GgdMGwVkMnNnlM7NpABAAC2USemhl0ahr9OWAtRX+iTyOAo34azmKeh/ISlNPIpUQRdWZMiN5cDxq+OzfHyLFfilD830eVakV5OGhE5avSZA60t3k2+Lp8Wra07qe6nGfVg8o4mGOrrvWTZOLvbAkYzLZICFRA769rSsL/J1d5NzPRAGgMmVLycndnusLRKLcFOgGqryOS2AwMnY15sNuUt+f7vD3BXrcz502e/En/LuyVCa3fI80rE6gIPvmetg80TBrMK5S7rDJUcxX8nIWa4JIZ8KiPWMwOq6BNU2KGlMbcoRlRXyNCpwYDd244oT/mG+wfR0h6xlJqHLYoe1sVWggapGCZbsqynZ1H9cs/ygltyPcsagUBwkOCDlNgPFEtRs+ORynTlzNHmjSo1f3zxVfpccHcXkO3xVKCZK4lIdEXdJMSt8FyoNyqMoWFTCbBahiAe2flWB/tLT/tXyuNMJY1CvA1ZwqVEr6HlXcmJfunZqTBQJCM2IzOHHbkp/aQ01zJx+qdloPvzjd3il4WnlTW3UJQkc5mLWjeN1ao+QAAAAPIqgHQ1YAjfSuy+VMooUxdmdBreg8T4TuxVc9tF9as79Ti1azfRrHlpAi+I488Rbxm0ZzEzmo4Jg078nNpPGwE=</connectionstring>
+  </NHibernateConfiguration>
+  <ViewManagerConfiguration>
+    <ShowExtendedErrorInformation>true</ShowExtendedErrorInformation>
+    <ShowStackTrace>true</ShowStackTrace>
+  </ViewManagerConfiguration>
+  <LoyaltyConfiguration>
+    <ServiceIP Value="" />
+    <ServiceHostedWithName Value="" />
+    <ServiceNameSpace Value="" />
+  </LoyaltyConfiguration>
+  <SendInformation>true</SendInformation>
+</Configuration>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36F94F12-2AE1-41C5-9403-B600BF9D4331}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CheckGoodReceiptPO</RootNamespace>
+    <AssemblyName>CheckGoodReceiptPO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CXS.Framework.Core, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Core, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Data, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.DomainObjects, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.DomainObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Globalization, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.IO, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.UI, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail, Version=6.6.7425.36608, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.ApplicationUpdate">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.ApplicationUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.BusinessLogic, Version=6.6.7425.36610, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.Extensibility, Version=6.6.7425.36616, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.Extensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.POSLogic, Version=6.6.7425.36619, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.POSLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="CXSManagementConsole, Version=6.6.7425.36677, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXSManagementConsole.exe</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\DevExpress.Data.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\DevExpress.Utils.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\DevExpress.XtraEditors.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckGoodreceiptPO.cs" />
+    <Compile Include="iVendQuery.cs" />
+    <Compile Include="LogGoodReceip.cs" />
+    <Compile Include="LogType.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
